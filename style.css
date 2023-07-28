@@ -1,0 +1,10 @@
+/* VARIABLES */
+
+:root {
+  /* COLORS */
+
+  --clr-blue-50: 210 46% 95%; /* Light Grayish Blue */
+  --clr-blue-300: 212 23% 69%; /* Grayish Blue */
+  --clr-blue-400: 214 17% 51%; /* Desaturated Dark Blue */
+  --clr-blue-600: 217 19% 35%; /* Very Dark Grayish Blue */
+}
