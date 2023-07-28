@@ -24,19 +24,69 @@
     <title>Frontend Mentor | Article preview component</title>
   </head>
   <body>
-    Frontend Mentor | Article preview component
-    <!-- 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+    <main>
+      <div class="card">
+        <div class="card__header">
+          <div class="card__img-wrapper">
+            <img src="./images/drawers.jpg" alt="" class="card__img" />
+          </div>
+        </div>
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
+        <div class="card__body">
+          <h1 class="card__title">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h1>
+          <p class="card__summary">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I&apos;ve got some simple tips to
+            help you make any room feel complete.
+          </p>
+        </div>
 
-  Michelle Appleton
-  28 Jun 2020
+        <div class="card__footer">
+          <div class="card__avatar-img-wrapper">
+            <img
+              src="./images/avatar-michelle.jpg"
+              alt="Michelle Appleton"
+              class="card__avatar-img"
+            />
+          </div>
+          <div class="card__author">
+            <h2 class="card__author-name">Michelle Appleton</h2>
+            <p class="card__timestamp">28 Jun 2020</p>
+          </div>
+          <button class="card__share-btn">
+            <img src="./images/icon-share.svg" alt="Share" />
+          </button>
+        </div>
 
-  Share
- -->
+        <div class="card__popup">
+          <h2 class="card__popup-title">Share</h2>
+
+          <ul class="card__popup-social-list">
+            <li class="card__popup-social-item">
+              <a href="#" class="card__popup-social-link"
+                ><img src="./images/icon-facebook.svg" alt="Facebook"
+              /></a>
+            </li>
+            <li class="card__popup-social-item">
+              <a href="#" class="card__popup-social-link"
+                ><img src="./images/icon-twitter.svg" alt="Twitter"
+              /></a>
+            </li>
+            <li class="card__popup-social-item">
+              <a href="#" class="card__popup-social-link"
+                ><img src="./images/icon-pinterest.svg" alt="Pinterest"
+              /></a>
+            </li>
+          </ul>
+
+          <button class="card__popup-btn">
+            <img src="./images/icon-share.svg" alt="Share" />
+          </button>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
