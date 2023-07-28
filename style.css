@@ -55,3 +55,20 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+/* BASE */
+
+body {
+  font: var(--fw-medium) 1rem var(--ff-sans);
+  background-color: hsl(var(--clr-blue-50));
+  color: hsl(var(--clr-blue-400));
+  display: grid;
+  place-content: center;
+  padding: 1.5em;
+}
+
+h1,
+h2 {
+  font-weight: var(--fw-bold);
+  color: hsl(var(--clr-blue-600));
+}
