@@ -45,3 +45,7 @@ button {
   cursor: pointer;
   outline: transparent;
 }
+
+ul {
+  list-style: none;
+}
