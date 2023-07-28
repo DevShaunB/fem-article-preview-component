@@ -7,4 +7,11 @@
   --clr-blue-300: 212 23% 69%; /* Grayish Blue */
   --clr-blue-400: 214 17% 51%; /* Desaturated Dark Blue */
   --clr-blue-600: 217 19% 35%; /* Very Dark Grayish Blue */
+
+  /* FONT */
+
+  --ff-sans: 'Manrope', sans-serif;
+
+  --fw-medium: 500;
+  --fw-bold: 700;
 }
