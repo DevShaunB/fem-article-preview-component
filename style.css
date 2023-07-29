@@ -197,6 +197,7 @@ h2 {
   font-size: 0.8125rem;
 }
 
+.card__share-btn.active,
 .card__share-btn:where(:hover, :focus-visible) {
   background-color: hsl(var(--clr-blue-400));
   color: hsl(var(--clr-blue-50));
@@ -224,7 +225,7 @@ h2 {
   font-weight: var(--fw-medium);
   letter-spacing: 0.377em;
   text-transform: uppercase;
-  color: inherit;
+  color: hsl(var(--clr-blue-400));
 }
 
 .card__popup-social-list {
@@ -243,4 +244,69 @@ h2 {
 .card__popup-btn:where(:hover, :focus-visible) {
   background-color: hsl(var(--clr-blue-50));
   color: hsl(var(--clr-blue-400));
+}
+
+@media screen and (min-width: 48em) {
+  /* CARD */
+
+  .card {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .card__img-wrapper {
+    width: 17.8125em;
+    height: 100%;
+    border-radius: var(--rounded-md) 0 0 var(--rounded-md);
+  }
+
+  .card__img {
+    height: 100%;
+    object-position: left;
+  }
+
+  .card__body {
+    padding: 2em 2.5em 2em;
+  }
+
+  .card__title {
+    font-size: 1.25rem;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    margin-bottom: 0.6em;
+  }
+
+  .card__summary {
+    padding: 0;
+  }
+
+  .card__footer {
+    margin-top: 1.25em;
+  }
+
+  /* POPUP */
+
+  .card__popup {
+    width: unset;
+    padding: 1.125em 2.25em;
+    border-radius: var(--rounded-md);
+    bottom: 6em;
+    left: unset;
+    right: -4.25em;
+  }
+
+  .card__popup::before {
+    content: '';
+    width: 1.0625em;
+    aspect-ratio: 1;
+    background-color: inherit;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  .card__popup-btn {
+    display: none;
+  }
 }
