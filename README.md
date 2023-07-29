@@ -35,6 +35,7 @@ Users should be able to:
 
 ### Links
 
+- Solution URL: [https://www.frontendmentor.io/solutions/article-preview-component-using-css-grid-and-flexbox-h8H-C_h2GC](https://www.frontendmentor.io/solutions/article-preview-component-using-css-grid-and-flexbox-h8H-C_h2GC)
 - Live Site URL: [https://devshaunb.github.io/fem-article-preview-component/](https://devshaunb.github.io/fem-article-preview-component/)
 
 ## Reference
