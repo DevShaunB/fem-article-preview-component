@@ -77,14 +77,59 @@ a {
   border-width: 0;
 }
 
+.bg-blue-50 {
+  background-color: hsl(var(--clr-blue-50));
+}
+
+.bg-blue-400 {
+  background-color: hsl(var(--clr-blue-400));
+}
+
+.bg-blue-600 {
+  background-color: hsl(var(--clr-blue-600));
+}
+
+.bg-white {
+  background-color: hsl(var(--clr-white));
+}
+
+.text-blue-50 {
+  color: hsl(var(--clr-blue-50));
+}
+
+.text-blue-300 {
+  color: hsl(var(--clr-blue-300));
+}
+
+.text-blue-400 {
+  color: hsl(var(--clr-blue-400));
+}
+
+.w-full {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
 /* BASE */
 
 body {
   font: var(--fw-medium) 1rem var(--ff-sans);
-  background-color: hsl(var(--clr-blue-50));
-  color: hsl(var(--clr-blue-400));
-  display: grid;
-  place-content: center;
   padding: 1.5em;
 }
 
@@ -99,9 +144,6 @@ h2 {
 .card {
   max-width: 45.625em;
   position: relative;
-  background-color: hsl(var(--clr-white));
-  display: flex;
-  flex-direction: column;
   gap: 2.25em;
   border-radius: var(--rounded-md);
   box-shadow: 0.5em 1em 2em rgba(0, 0, 0, 0.1);
@@ -113,7 +155,6 @@ h2 {
 }
 
 .card__img {
-  width: 100%;
   height: 12.5em;
   object-fit: cover;
   object-position: center 25%;
@@ -137,9 +178,7 @@ h2 {
 
 .card__footer {
   margin-top: 2em;
-  display: grid;
   grid-template-columns: 2.5em 1fr 2em;
-  align-items: center;
   gap: 1em;
 }
 
@@ -152,15 +191,8 @@ h2 {
   font-size: 0.8125rem;
 }
 
-.card__timestamp {
-  color: hsl(var(--clr-blue-300));
-}
-
 .card__share-btn {
   aspect-ratio: 1;
-  background-color: hsl(var(--clr-blue-50));
-  display: grid;
-  place-content: center;
   border-radius: 50%;
   transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
 }
@@ -173,12 +205,9 @@ h2 {
 /* SHARE POPUP */
 
 .card__popup {
-  width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: hsl(var(--clr-blue-600));
-  color: hsl(var(--clr-blue-50));
   display: none;
   align-items: center;
   gap: 1.3125em;
@@ -195,12 +224,10 @@ h2 {
   font-weight: var(--fw-medium);
   letter-spacing: 0.377em;
   text-transform: uppercase;
-  color: hsl(var(--clr-blue-50));
+  color: inherit;
 }
 
 .card__popup-social-list {
-  display: flex;
-  align-items: center;
   gap: 1em;
 }
 
@@ -211,9 +238,6 @@ h2 {
 .card__popup-btn {
   width: 2em;
   aspect-ratio: 1;
-  background-color: hsl(var(--clr-blue-400));
-  display: grid;
-  place-content: center;
   border-radius: 50%;
   margin-left: auto;
   transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;

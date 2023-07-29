@@ -25,12 +25,12 @@
 
     <script src="main.js" defer></script>
   </head>
-  <body>
+  <body class="bg-blue-50 text-blue-400 grid center">
     <main>
-      <div class="card">
+      <div class="card bg-white flex flex-col">
         <div class="card__header">
           <div class="card__img-wrapper">
-            <img src="./images/drawers.jpg" alt="" class="card__img" />
+            <img src="./images/drawers.jpg" alt="" class="card__img w-full" />
           </div>
         </div>
 
@@ -45,7 +45,7 @@
             help you make any room feel complete.
           </p>
 
-          <div class="card__footer">
+          <div class="card__footer grid center">
             <div class="card__avatar-img-wrapper">
               <img
                 src="./images/avatar-michelle.jpg"
@@ -55,9 +55,12 @@
             </div>
             <div class="card__author">
               <h2 class="card__author-name">Michelle Appleton</h2>
-              <p class="card__timestamp">28 Jun 2020</p>
+              <p class="card__timestamp text-blue-300">28 Jun 2020</p>
             </div>
-            <button id="share-btn" class="card__share-btn">
+            <button
+              id="share-btn"
+              class="card__share-btn bg-blue-50 grid center"
+            >
               <span class="sr-only">Share</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
                 <path
@@ -69,10 +72,10 @@
           </div>
         </div>
 
-        <div id="popup" class="card__popup">
+        <div id="popup" class="card__popup w-full bg-blue-600 text-blue-50">
           <h2 class="card__popup-title">Share</h2>
 
-          <ul class="card__popup-social-list">
+          <ul class="card__popup-social-list flex center">
             <li class="card__popup-social-item">
               <a href="#" class="card__popup-social-link"
                 ><img src="./images/icon-facebook.svg" alt="Facebook"
@@ -90,7 +93,10 @@
             </li>
           </ul>
 
-          <button id="hide-popup" class="card__popup-btn">
+          <button
+            id="hide-popup"
+            class="card__popup-btn bg-blue-400 grid center"
+          >
             <span class="sr-only">Hide share menu</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
               <path
