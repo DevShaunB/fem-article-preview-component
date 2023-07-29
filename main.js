@@ -3,7 +3,8 @@ const shareBtn = document.getElementById('share-btn')
 const hidePopupBtn = document.getElementById('hide-popup')
 
 shareBtn.addEventListener('click', () => {
-  popup.classList.add('show')
+  popup.classList.toggle('show')
+  shareBtn.classList.toggle('active')
 })
 
 hidePopupBtn.addEventListener('click', () => {
