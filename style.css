@@ -168,3 +168,51 @@ h2 {
   background-color: hsl(var(--clr-blue-400));
   color: hsl(var(--clr-blue-50));
 }
+
+/* SHARE POPUP */
+
+.card__popup {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: hsl(var(--clr-blue-600));
+  color: hsl(var(--clr-blue-50));
+  display: none;
+  align-items: center;
+  gap: 1.3125em;
+  padding: 1em 2em;
+  border-radius: 0 0 var(--rounded-md) var(--rounded-md);
+}
+
+.card__popup.show {
+  display: flex;
+}
+
+.card__popup-title {
+  font-size: 0.8125rem;
+  font-weight: var(--fw-medium);
+  letter-spacing: 0.377em;
+  text-transform: uppercase;
+  color: hsl(var(--clr-blue-50));
+}
+
+.card__popup-social-list {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.card__popup-social-link {
+  display: block;
+}
+
+.card__popup-btn {
+  width: 2em;
+  aspect-ratio: 1;
+  background-color: hsl(var(--clr-blue-400));
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  margin-left: auto;
+}
