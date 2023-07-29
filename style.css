@@ -8,12 +8,18 @@
   --clr-blue-400: 214 17% 51%; /* Desaturated Dark Blue */
   --clr-blue-600: 217 19% 35%; /* Very Dark Grayish Blue */
 
+  --clr-white: 0 0% 100%;
+
   /* FONT */
 
   --ff-sans: 'Manrope', sans-serif;
 
   --fw-medium: 500;
   --fw-bold: 700;
+
+  /* MISC */
+
+  --rounded-md: 0.625em;
 }
 
 /* RESET */
@@ -71,4 +77,17 @@ h1,
 h2 {
   font-weight: var(--fw-bold);
   color: hsl(var(--clr-blue-600));
+}
+
+/* CARD */
+
+.card {
+  max-width: 45.625em;
+  position: relative;
+  background-color: hsl(var(--clr-white));
+  display: flex;
+  flex-direction: column;
+  gap: 2.25em;
+  border-radius: var(--rounded-md);
+  box-shadow: 0.5em 1em 2em rgba(0, 0, 0, 0.1);
 }
