@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | Article preview component</title>
+
+    <script src="main.js" defer></script>
   </head>
   <body>
     <main>
@@ -55,7 +57,7 @@
               <h2 class="card__author-name">Michelle Appleton</h2>
               <p class="card__timestamp">28 Jun 2020</p>
             </div>
-            <button class="card__share-btn">
+            <button id="share-btn" class="card__share-btn">
               <span class="sr-only">Share</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
                 <path
@@ -67,7 +69,7 @@
           </div>
         </div>
 
-        <div class="card__popup">
+        <div id="popup" class="card__popup">
           <h2 class="card__popup-title">Share</h2>
 
           <ul class="card__popup-social-list">
@@ -88,7 +90,7 @@
             </li>
           </ul>
 
-          <button class="card__popup-btn">
+          <button id="hide-popup" class="card__popup-btn">
             <span class="sr-only">Hide share menu</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
               <path
