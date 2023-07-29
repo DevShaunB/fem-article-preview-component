@@ -9,4 +9,5 @@ shareBtn.addEventListener('click', () => {
 
 hidePopupBtn.addEventListener('click', () => {
   popup.classList.remove('show')
+  shareBtn.classList.remove('active')
 })
