@@ -216,3 +216,8 @@ h2 {
   border-radius: 50%;
   margin-left: auto;
 }
+
+.card__popup-btn:where(:hover, :focus-visible) {
+  background-color: hsl(var(--clr-blue-50));
+  color: hsl(var(--clr-blue-400));
+}
