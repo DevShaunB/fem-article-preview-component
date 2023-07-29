@@ -103,3 +103,56 @@ h2 {
   object-fit: cover;
   object-position: center 25%;
 }
+
+.card__body {
+  padding: 0 2em 1.25em;
+  line-height: 1.5;
+}
+
+.card__title {
+  letter-spacing: 0.0125em;
+  margin-bottom: 0.75em;
+}
+
+.card__summary {
+  font-size: 0.8125rem;
+  letter-spacing: 0.00625em;
+  padding-right: 0.15em;
+}
+
+.card__footer {
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: 2.5em 1fr 2em;
+  align-items: center;
+  gap: 1em;
+}
+
+.card__avatar-img-wrapper {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.card__author {
+  font-size: 0.8125rem;
+}
+
+.card__timestamp {
+  color: hsl(var(--clr-blue-300));
+}
+
+.card__share-btn {
+  aspect-ratio: 1;
+  background-color: hsl(var(--clr-blue-50));
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+}
+
+.card__share-btn:where(:hover, :focus-visible) {
+  background-color: hsl(var(--clr-blue-600));
+}
+
+.card__share-btn:where(:hover, :focus-visible) img {
+  filter: brightness(0) invert(1);
+}
