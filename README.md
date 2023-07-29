@@ -31,7 +31,11 @@ Users should be able to:
 
 ![Article preview component desktop screenshot](https://devshaunb.github.io/fem-article-preview-component/screenshots/desktop.png)
 
+![Article preview component desktop active screenshot](https://devshaunb.github.io/fem-article-preview-component/screenshots/desktop-active.png)
+
 ![Article preview component mobile screenshot](https://devshaunb.github.io/fem-article-preview-component/screenshots/mobile.png)
+
+![Article preview component mobile screenshot](https://devshaunb.github.io/fem-article-preview-component/screenshots/mobile-active.png)
 
 ### Links
 
