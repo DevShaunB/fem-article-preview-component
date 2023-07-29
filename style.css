@@ -126,6 +126,12 @@ a {
   justify-content: center;
 }
 
+.btn {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
 /* BASE */
 
 body {
@@ -191,12 +197,6 @@ h2 {
   font-size: 0.8125rem;
 }
 
-.card__share-btn {
-  aspect-ratio: 1;
-  border-radius: 50%;
-  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
-}
-
 .card__share-btn:where(:hover, :focus-visible) {
   background-color: hsl(var(--clr-blue-400));
   color: hsl(var(--clr-blue-50));
@@ -237,10 +237,7 @@ h2 {
 
 .card__popup-btn {
   width: 2em;
-  aspect-ratio: 1;
-  border-radius: 50%;
   margin-left: auto;
-  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
 }
 
 .card__popup-btn:where(:hover, :focus-visible) {
